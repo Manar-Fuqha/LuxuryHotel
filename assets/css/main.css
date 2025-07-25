@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.navbar{
+    background-color: rgba(24, 14, 1, 0.8);
+    z-index: 9;
+}
+.navbar-brand{
+    font-family: var(--main-font);
+    font-size: 30px;
+}
+.navbar .nav-link{
+    color: white;
+    font-family: var(--main-font);
+}
+.navbar .nav-link.active{
+    color: var(--main-color);
+}
+.nav-link:hover{
+    color: #e9d2aeb3
+}
+.navbar .btn{
+    background-color: var(--main-color);
+}
+
+/* start header */
+/* .header{
+    background-attachment: url(../videos/background_header.mp4);
+} */
+ .header-overlay{
+    background-color: #0f0d07cc;
+ }
+ 
+ .header , .header-background ,.header-overlay ,.header .header-background video{
+    height: 150vh;
+
+ }
+ .hero-content{
+    top: 250px;
+ }
+ .hero-content .title{
+    font-size: 56px;
+ }
+.hero-booking .card{
+    background-color: #2e2b280d;
+    box-shadow: 0 20px 40px #ffffff26;
+    border: 1px solid #ffffff33;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    color: white;
+}
+
+.hero-actions .btn{
+    background-color: var(--main-color);
+}
+/* end header */
+.about-home .room{
+    left: 45% ;
+    border: 4px solid white;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px #0000001f;
+    top: 130px;
+}
+.about-home .about-section-header span{
+    color: var(--main-color);
+}
+.about-home .about-section-header h2{
+    font-family: var(--main-font);
+    color: var(--heading-color);
+}
+.about-home-contect p{
+    color: #212529d9;
+}
+.about-home .about-home-images img{
+     border-radius: 16px;
+}
+.star-section{
+    background-color: var(--main-color);
+    color: #fff;
+    width: fit-content;
+    top: 130px;
+    left: 110px;
+}
+.star-section .luxury{
+    font-size: 12px;
+}
+ .about-feature-icon{
+    min-width: 40px;
+    height: 40px;
+    background-color: #917a5a1a;
+}
+.about-home .about-feature-content h4{
+    font-size: 16px;
+    font-family: var(--main-font);
+    color: var(--heading-color);
+}
+.about-home .about-feature-content p{
+    font-size: 14px;
+}
+.about-actions a{
+    background-color: var(--main-color);
+    color: #fff;
+    font-weight: 500;
+    
+}
+.about-actions a:hover{
+border: 1px solid var(--main-color);
+color: var(--main-color);
+
+}
+.arrow{
+    fill: #fff;
+}
+.about-actions a:hover .arrow{
+    fill: var(--main-color);
+}
+.room-section{
+    box-shadow: 0 4px 25px #0000000f;
+    border-radius: 20px;
+}
+.room-section img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+.room-section .room-img img{
+    transition: transform 0.5s;
+}
+.room-section .room-img img:hover {
+    transform: scale(1.1);
+
+}
+.room-badge{
+    background-color: var(--main-color);
+    color: #fff;
+    top: 20px;
+    left: 20px;
+}
+.room-icons{
+    bottom: 20px;
+    right: 20px;
+}
+.room-icon{
+    background-color: #ffffffe6;
+    
+    /* width: 50px; */
+}
+.room-feature{
+    width: 35px;
+    height: 40px;
+    background-color: #917a5a1a;
+}
+.book a ,.book a:hover{
+    background-color: var(--main-color);
+    color: #fff;
+}
+.room-detalis h3{
+    font-size: 22px;
+}
+.room-detalis p{
+    color: #212529bf;
+}
+.price{
+    color: var(--main-color);
+}
+.price-label{
+    color: #21252999;
+}
+
+
+.reserve{
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+}
+.reserve:hover{
+    background-color: var(--main-color);
+    color: #fff;
+}
+
