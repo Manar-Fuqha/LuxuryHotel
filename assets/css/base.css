@@ -1,8 +1,29 @@
 :root{
     --main-color : #917a5a;
+    --default-color:#212529;
     --heading-color: #32220b;
     --main-font : "Playfair Display", serif;
+    --default-font :"Roboto", sans-serif;
 }
 body{
     background-color: #f5f4f1;
+}
+.text-main-color{
+    color: var(--main-color);
+}
+.bg-main-color{
+    background-color: var(--main-color);
+}
+.heading-font{
+    font-family: var(--main-font);
+}
+h1 , h2,h3,h4,h5,h6{
+    font-family: var(--main-font);
+}
+p{
+    color: #212529bf;
+    font-family: var(--default-font);
+}
+a{
+    text-decoration: none;
 }

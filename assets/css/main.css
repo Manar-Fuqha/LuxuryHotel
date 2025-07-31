@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 .navbar{
     background-color: rgba(24, 14, 1, 0.8);
     z-index: 9;
@@ -19,6 +19,7 @@
 }
 .navbar .btn{
     background-color: var(--main-color);
+    
 }
 
 /* start header */
@@ -50,6 +51,23 @@
 
 .hero-actions .btn{
     background-color: var(--main-color);
+    transition: transform .3s;
+}
+.hero-actions .btn:last-child{
+ background-color: transparent;
+ border: 2px solid #fff;
+ transition: background-color .3s , border-color .3s;
+}
+.hero-actions .btn:hover{
+    background-color: var(--main-color);
+    transform: translateY(-2px);
+    border-color: var(--main-color);
+}
+.search-btn button{
+    background-color: var(--main-color);
+    color: #fff;
+    border: none;
+    outline: none;
 }
 /* end header */
 .about-home .room{
@@ -128,6 +146,30 @@ color: var(--main-color);
     transform: scale(1.1);
 
 }
+.title-line::before {
+    content: "";
+    background-color: #21252966;
+    width: 180px;
+    height: 1px;
+    position: absolute;
+    display: block;
+    margin: auto;
+    right: 0;
+    left: 0;
+    bottom: 1px;
+}
+.title-line::after {
+    content: "";
+    background-color: var(--main-color);
+    width: 60px;
+    height: 3px;
+    position: absolute;
+    display: block;
+    margin: auto;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
 .room-badge{
     background-color: var(--main-color);
     color: #fff;
@@ -155,8 +197,19 @@ color: var(--main-color);
 .room-detalis h3{
     font-size: 22px;
 }
-.room-detalis p{
+.room-detalis p , .room-column-section p{
     color: #212529bf;
+}
+.right-rooms{
+    background-color: transparent;
+    border: none;
+}
+.right-room{
+    background-color: #fff;
+    transition: box-shadow .3s;
+}
+.right-room:hover{
+    box-shadow: 0 12px 35px #0000001f;
 }
 .price{
     color: var(--main-color);
@@ -164,14 +217,206 @@ color: var(--main-color);
 .price-label{
     color: #21252999;
 }
-
-
+.room-column-section h4{
+    color: #32220b;
+}
+.room-column-section p{
+   font-size: 14px;
+}
+.a-room-feature span{
+    font-size: 13px;
+    color: #212529a6;
+}
+.small{
+    font-size: 11px;
+}
 .reserve{
     border: 1px solid var(--main-color);
     color: var(--main-color);
+    transition: background-color 0.5s, color 0.5s;
+    
 }
 .reserve:hover{
     background-color: var(--main-color);
     color: #fff;
 }
+.eye-hover{
+    background-color: #ffffffba;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    visibility: hidden;
+    transition: visibility .2s;
+}
+.right-room .img-section:hover .eye-hover{
+    visibility: visible;
+}
 
+.another-room-section .card{
+    box-shadow: 0 4px 25px #0000000f;
+    
+}
+.another-room-section .card h5{
+    font-family: var(--main-font);
+    font-size: 16px;
+}
+
+.discover-rooms ,.discover-rooms:hover{
+    background-color: var(--main-color);
+    color: white;
+    font-size: 16px;
+}
+.discover-rooms{
+    transition: transform .5s;
+}
+.discover-rooms:hover{
+    box-shadow: 0 8px 25px #3690e74d;
+    transform: translateY(-3px); 
+}
+
+
+.amenities-section .title-icon{
+    background-color:#917a5a1a ;
+    width: 70px;
+    height: 70px;
+}
+.amenities-section .row .card{
+    box-shadow: 0 10px 40px #0000000f ;
+
+    
+}
+.amenities-section .row .card::before {
+    transition: opacity 0.3s;
+    opacity: 0;
+}
+.amenities-section .row .card:hover::before{
+    content: "";
+    position: absolute;
+    height: 4px;
+    left: 0px;
+    right: 0px;
+    top: 0;
+    opacity: 1;
+    background-color: var(--main-color);
+}
+.amenities-section .amenity-feature{
+    background-color: #2125291a;
+    color: var(--dafault-color);
+    font-size: 12px;
+    font-weight: 500;
+    transition: background-color .3s , color .3s;
+}
+.amenities-section .card:hover .amenity-feature{
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.amenities-section .amenities-explore{
+    background-color: #917a5a0d;
+    border:1px solid  color-mix(in srgb,var(--main-color) ,transparent 85%);
+}
+.discover-amenities , .discover-amenities:hover{
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 16px;
+}
+.discover-amenities{
+    transition: transform .5s;
+}
+.discover-amenities:hover{
+    transform: translateY(-3px); 
+}
+
+
+.testimonial-img img{
+    width: 80px;
+    height: 80px;
+}
+
+@media screen and (min-width:960px){
+    .carousel-inner{
+        display: flex;
+    }
+    .carousel-item{
+        display: block;
+        margin-right: 10px;
+        
+        flex: 0 0 calc(100% /3);
+        
+    }
+}
+.carousel-inner{
+        padding: 16px;
+}
+.card{
+  margin: 0 8px;
+  position: relative;
+}
+.offers-section .card{
+    box-shadow: 0 4px 20px #00000014;
+    border:2px solid var(--main-color);
+    transition:  transform .3s;
+}
+.offers-section .offer-badge{
+    right: 15px;
+    top: 15px;
+}
+.offers-section .card:hover{
+    overflow: hidden;
+}
+.offers-section .card img{
+    transition:  transform 1s;
+}
+.offers-section .card:hover img{
+    transform: scale(1.2);
+}
+.offers-section .card-title h5{
+    color: #32220b;
+}
+.offers-section .offer-badge .discount{
+    color: #fff;
+    background-color: color-mix(in srgb, #e74c3c 0%, #c0392b 100%);
+}
+.offers-section a ,.offers-section a:hover{
+    background-color: var(--main-color);
+    color: #fff;
+    transition: background-color .3s ,transform .3s;
+}
+.offers-section a:hover{
+    background-color: color-mix(in srgb, var(--main-color), #000 10%);
+    transform: translateY(-2px);
+}
+.offers-section p{
+    font-size: 14px;
+    color: #212529cc;
+}
+
+.footer{
+    background-color: #1b1913;
+    color: #fff;
+    font-family: var(--main-font);
+}
+.footer-links h4{
+    font-size: 16px;
+}
+.footer-links h4::after{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: var(--main-color);
+    left: 0;
+    bottom: 0;
+}
+.footer-links li {
+    list-style-type: none;
+    font-size: 14px;
+    font-family: var(--dafault-font);
+}
+.footer-links li a{
+    color: #ffffffb3;
+    transition: color .3s;
+}
+.footer-links li a:hover{
+    color: var(--main-color);
+}
