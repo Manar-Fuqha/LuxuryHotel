@@ -146,30 +146,7 @@ color: var(--main-color);
     transform: scale(1.1);
 
 }
-.title-line::before {
-    content: "";
-    background-color: #21252966;
-    width: 180px;
-    height: 1px;
-    position: absolute;
-    display: block;
-    margin: auto;
-    right: 0;
-    left: 0;
-    bottom: 1px;
-}
-.title-line::after {
-    content: "";
-    background-color: var(--main-color);
-    width: 60px;
-    height: 3px;
-    position: absolute;
-    display: block;
-    margin: auto;
-    right: 0;
-    left: 0;
-    bottom: 0;
-}
+
 .room-badge{
     background-color: var(--main-color);
     color: #fff;

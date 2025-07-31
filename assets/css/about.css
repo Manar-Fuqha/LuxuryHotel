@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+.navbar{
+    background-color: rgba(24, 14, 1, 0.8);
+    z-index: 9;
+}
+.navbar-brand{
+    font-family: var(--main-font);
+    font-size: 30px;
+}
+.navbar .nav-link{
+    color: white;
+    font-family: var(--main-font);
+}
+.navbar .nav-link.active{
+    color: var(--main-color);
+}
+.nav-link:hover{
+    color: #e9d2aeb3
+}
+.navbar .btn{
+    background-color: var(--main-color);
+    
+}
+
+/* start header */
+
+.header{
+    background-image: url(../images/about-page/header.webp);
+    height: 60vh;
+    background-size: cover;
+    background-position: 0px ;
+    position: relative;
+
+}
+.header::before{
+    background-color: #0f0d0780;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    display: block;
+
+}
+.breadcrumb-item a{
+    color: var(--main-color);
+}
+.breadcrumb-item+.breadcrumb-item::before{
+    color: #ffffff80;
+}
+
+/* end header */
+
+/* start about section  */
+.stat{
+    box-shadow: 0 5px 15px #00000014;
+    font-family: var(--default-font);
+    color: var(--heading-color);
+}
+.stat .stat-number{
+    color: var(--main-color);
+    font-family: var(--main-font);
+}
+
+.about-section-image img{
+    transition: transform .8s;
+}
+.about-section-image img:hover{
+    transform: scale(1.2);
+}
+
+.feature-icon{
+    width: 60px;
+    height: 60px;
+    background-color: color-mix(in srgb, var(--main-color), transparent 90%)
+}
+.feature-item{
+    box-shadow: 0 5px 15px #00000014;
+}
+.feature-item span{
+    font-family: var(--main-font);
+}
+.feature-item p{
+    font-family: var(--dafault-font);
+}
+.view-btn button{
+    transition: transform .3s ,background-color .3s;
+}
+.view-btn button , .view-btn button:hover{
+    background-color: var(--main-color);
+}
+.view-btn button:hover{
+    transform: translateY(-3px);
+    background-color: color-mix(in srgb, var(--main-color), black 15%);
+}
+
+/* end about section  */
+
+/* start  Awards & Recognition section*/
+
+.awards-and-recognition-section .feature-icon{
+    background-color: color-mix(in srgb, var(--main-color), black 20%);
+}
+
+
+/* end  Awards & Recognition section*/
+
+/* start srooms section  */
+.room{
+    transition: box-shadow .5s ,transform .5s ;
+}
+.room:hover{
+    box-shadow: 0 15px 40px #00000026;
+    transform: translateY(-3px);
+}
+.room-img img{
+   transition:  transform  .5s;
+}
+.room-img img:hover{
+    transform: scale(1.2);
+   
+}
+.room .card-text {
+    font-size: 14px;
+}
+.room-feature span{
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
+    font-size: 13px;
+    font-family: var(--default-font);
+}
+.room-details a{
+    border:1px solid var(--main-color);
+    font-size: 14px;
+    transition: background-color .3s , color .3s;
+}
+
+.room-details a:hover{
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+/* end rooms section  */
+
+
+
+
+
+.footer{
+    background-color: #1b1913;
+    color: #fff;
+    font-family: var(--main-font);
+}
+.footer-links h4{
+    font-size: 16px;
+}
+.footer-links h4::after{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: var(--main-color);
+    left: 0;
+    bottom: 0;
+}
+.footer-links li {
+    list-style-type: none;
+    font-size: 14px;
+    font-family: var(--dafault-font);
+}
+.footer-links li a{
+    color: #ffffffb3;
+    transition: color .3s;
+}
+.footer-links li a:hover{
+    color: var(--main-color);
+}
