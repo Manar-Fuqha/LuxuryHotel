@@ -70,6 +70,71 @@
 
 
 
+/* start rooms section */
+.rooms-header ::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #2125291a;
+    left: 0;
+    bottom: 25px;
+}
+.rooms-header .form-select{
+    border-color: var(--main-color);
+}
+ .form-select:focus , .form-control:focus{
+    box-shadow: 0 0 0 4px color-mix(in srgb, var(--main-color), transparent 80%);
+    border-color: var(--main-color);
+}
+.rooms-grid .card{
+    box-shadow: 0 5px 15px #00000014;
+    transition: transform .3s;
+}
+.rooms-grid .card:hover{
+    transform: translateY(-3px);
+}
+.room-img{
+    height: 250px;
+}
+.room-img img{
+    transition: transform .8s;
+}
+.room-img img:hover{
+    transform: scale(1.2);
+}
+.room-badge{
+    top: 15px;
+    left: 15px;
+}
+.price-info{
+    top: 15px;
+    right: 15px;
+}
+.feature-item{
+    background-color: #f5f4f1;
+    border:1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+}
+.feature-item span{
+    font-size: 11px;
+}
+.view a{
+    transition: background-color .3s ;
+}
+.view a:hover{
+        background-color: color-mix(in srgb, var(--main-color), black 15%);
+}
+.availability a{
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    transition: background-color .3s , color .3s;
+}
+.availability a:hover{
+    background-color: var(--main-color);
+    color: #fff;
+}
+/* end rooms section */
+
 
 
 
