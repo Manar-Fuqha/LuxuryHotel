@@ -124,7 +124,7 @@
 }
 .room-feature span{
     color: color-mix(in srgb, var(--default-color), transparent 30%);
-    font-size: 13px;
+    font-size: 11px;
     font-family: var(--default-font);
 }
 .room-details a{
