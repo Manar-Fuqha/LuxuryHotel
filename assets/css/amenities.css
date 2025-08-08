@@ -1,30 +1,4 @@
-/* start header */
 
-.header{
-    background-image: url(../images/about-page/header.webp);
-    height: 60vh;
-    background-size: cover;
-    background-position: 0px ;
-    position: relative;
-
-}
-.header::before{
-    background-color: #0f0d0780;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    content: "";
-    display: block;
-
-}
-.breadcrumb-item a{
-    color: var(--main-color);
-}
-.breadcrumb-item+.breadcrumb-item::before{
-    color: #ffffff80;
-}
-
-/* end header */
 
 .amenities-grid .card{
     box-shadow: 0 5px 15px #00000014;
