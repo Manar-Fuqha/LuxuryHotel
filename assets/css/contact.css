@@ -19,16 +19,43 @@ height: 150px;
     padding-left: 150px;
     padding-right: 150px;
 }
-/* .form-control{
-    border: 1px solid var(--main-color);
-} */
+@media screen and (max-width:900px) {
+    .contact-form{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    
+}
+@media screen and (max-width:560px) {
+    .contact-form{
+        padding-left: 50px;
+        padding-right: 50px;
+        /* background-color: red; */
+    }
+    
+}
+@media screen and (max-width:470px) {
+    .contact-form{
+        padding-left: 20px;
+        padding-right: 20px;
+        /* background-color: rgb(195, 169, 169); */
+    }
+    
+}
+@media screen and (max-width:400px) {
+    .contact-form{
+        padding-left: 7px;
+        padding-right: 7px;
+        /* background-color: rgb(181, 150, 229); */
+    }
+    
+}
+
 .form-control:focus{
     box-shadow: 0 0 0 4px color-mix(in srgb, var(--main-color), transparent 80%);
     border-color: var(--main-color);
 }
-.form-input input::placeholder{
-   /* padding-left: 15px; */
-}
+
 .message-area{
     height: 180px;
     resize: none;
