@@ -1,0 +1,11 @@
+.Booking-section label{
+    color: var(--heading-color);
+}
+ .helper{
+    font-size: 8px !important;
+}
+.Booking-section .form-select:focus{
+box-shadow: 0 0 0 4px color-mix(in srgb, var(--main-color), transparent 80%);
+border-color: var(--main-color);
+}
+
